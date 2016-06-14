@@ -166,6 +166,9 @@
 % \inlineheadsection command, used for a new employer
 \newcommand{\inlineheadsection}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]#2\end{basedescript}\vspace{-1.7em}}
 
+% \inlineheadsection command, used for a one liner with data
+\newcommand{\inlineheadrightdate}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]\hfill\emph{#2}\end{basedescript}\vspace{-1.7em}}
+
 % apo command, for an apostrophe that looks good on old style nums
 \newcommand{\apo}{\raisebox{-.18ex}{'}{\hspace{-.1em}}}
 
@@ -175,6 +178,9 @@
 
 
 %%% MORE SPECIFIC COMMANDS
+
+%enter latex easier
+\newcommand{\latex}{\LaTeX}
 
 % CPP command (found it in some corner of the internet and decided to use it)
 \newcommand{\CPP}{C\nolinebreak[4]\hspace{-.04em}\raisebox{.20ex}{\footnotesize\bf++}}
