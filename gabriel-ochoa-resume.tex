@@ -1,0 +1,204 @@
+% Start a document with the here given default font size and paper size.
+\documentclass[11pt]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.5in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\usepackage[T1]{fontenc}
+
+% Enable multi column
+\usepackage{multicol}
+
+% To kill the spaces in lists
+\usepackage{enumitem}
+
+% No space before multi colk
+\setlength\multicolsep{0pt}
+
+%\sloppy  % this to relax whitespacing in favour of straight margins
+
+\begin{document}  % begin the content of the document
+
+% title on top of the document
+\maintitle{Gabriel Ochoa}{}{}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\href{mailto:gochoa1@binghamton.edu}{gochoa1@binghamton.edu}\sbull
+(914)-483-8190\sbull
+\href{https://github.com/gabeochoa}{github.com/gabeochoa}\sbull
+\href{https://www.linkedin.com/in/gabemochoa}{linkedin.com/in/gabemochoa}
+
+\roottitle{Education}
+
+\spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
+
+\headedsection
+{\href{http://www.binghamton.edu/index.php}{Binghamton University, State University of New York}}
+{\textsc{Binghamton, New York}} {
+    \inlineheadsection
+    {B.S. Computer Science and B.A. Mathematics}
+    {Sept 2012 - May 2016}
+}
+
+\roottitle{Skills \& Interests}
+
+\spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+{Programming languages:}
+{ C++, Java,  Python, C, C\# }
+
+\inlineheadsection
+{Technical Knowledge:}
+{ Unity, OpenGL, Hadoop/Accumulo, MongoDB, GTest, LeapMotion, Git }
+
+\inlineheadsection
+{Human Languages:}
+{English (Native), Korean(Elementary), Spanish(Elementary)}
+
+\roottitle{Professional Experience}
+
+\spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
+
+\headedsection  % sets the header for the section and includes any subsections
+{\href{http://www.bloomberg.com/}{Bloomberg LP}}
+{\textsc{New York, New York}} {
+    \headedsubsection
+    {Software Engineer}
+    {June 2016 - Present}
+    {
+        % \begin{itemize}
+        %     \item Some really cool stuff
+        %     \item Used in production to process/query over a billion cloud stored things
+        %     \item Created to be the thing I tell my mom I do at work all day
+        %     \item Skills: Whatever needs to be used
+        % \end{itemize}
+    }
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+{}
+{} {
+    \headedsubsection
+    {BVault Software Engineering Intern}
+    {Summer 2015}
+    {
+        \begin{itemize}
+            \item Designed, Tested and Implemented API for Accumulo DataBase
+            \item Used in production to process/query over a billion cloud stored xml files
+            \item Created to be SEC compliant storage for the financial services industry
+            \item Skills: Accumulo, Hadoop, Java/C++/Python, GTest, Git, Vim/SublimeText/IntelliJ
+        \end{itemize}
+    }
+}
+
+\headedsection
+{\href{}{Binghamton University}}
+{\textsc{Vestal, NY}} {
+    \headedsubsection
+    {Course Assistant CS140 - Programming with Objects}
+    {Fall 2013 \& Spr 2014}
+    {
+        \begin{itemize}
+            \item Assited students with lab projects and assignments.
+            \item Skills - Java, Git, Eclipse
+        \end{itemize}
+    }
+}
+
+\roottitle{Projects}
+
+\spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
+
+
+\projects
+{\href{https://github.com/gabeochoa/sokim}{Deceit}}{BrickHack Spr16}
+{
+    \begin{itemize}[label={}]
+    	\setlength\itemsep{.005ex}
+        \item{$\textbf{Best FOSS Hack}$ - Webapp Card Game based on Dixit (the board game)}
+        \item{Python, Flask, and Reddit API.}
+    \end{itemize}
+}
+
+\projects
+{\href{https://github.com/gabeochoa/Cinemini}{Cinemini}}{HackBU Spr15}
+{
+    \begin{itemize}[label={}]
+    	\setlength\itemsep{.005ex}
+        \item{$\textbf{Hippest Hack Winner}$ - "Cliffnotes for Movies"}
+        \item{Edits a film down to 5 minutes using the plot and subtitles}
+        \item{Python, MoviePy, and Wikipedia API.}
+    \end{itemize}
+}
+
+\headedsubsection
+{\href{https://github.com/alanplotko/RoadTrip}{FriendWagon:}}{BrickHack Spr. 2015}
+{
+    \begin{itemize}[label={}]
+    	\setlength\itemsep{.005ex}
+        \item{$\textbf{Best Use of AWS Winner}$ - "Uber for Road Trips"}
+        \item{NodeJS, Spotify and Twilio API. Hosted on AWS.}
+    \end{itemize}
+}
+
+\headedsubsection
+{\href{}{VR Checkers}}{CS460: Graphics Programming}
+{
+    \begin{itemize}[label={}]
+    	\setlength\itemsep{.005ex}
+        \item{Created a 3D version of checkers to run while using Oculus Rift Headset}
+        \item{C++, OpenGL, Oculus Rift}
+    \end{itemize}
+}
+\headedsubsection
+{\href{}{Student Registration System}}{CS432: Database Systems}
+{
+    \begin{itemize}[label={}]
+    	\setlength\itemsep{.005ex}
+        \item{Designed and Implemented a Student Registration System for use by both teachers and students}
+        \item{Java, SQL, PL/SQL}
+    \end{itemize}
+}
+\roottitle{Activities}
+\spacedhrule{0.1em}{0.3em}  % a horizontal line with some vertical spacing before and after
+
+\inlineheadsection{Association of Computing Machinery (ACM)}
+{2012 - Present}
+\inlineheadsection{\href{http://core.binghamton.edu/}{Computers Robotics and Engineering Special Interest Housing (CoRE):}}
+{2014 - Present}
+\inlineheadsection
+{Binghamton ACM Projects Division: President and Lead Project Manager}
+{2012-2016}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
