@@ -107,17 +107,16 @@
 
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
-\xspaceskip7pt  % some more spacing between sentences (use "i.e.\ " or "with SQL\@. " in case of errors)
-
+\xspaceskip5pt  % some more spacing between sentences (use "i.e.\ " or "with SQL\@. " in case of errors)
 
 
 %%% CUSTOM COMMANDS
 
 % main title (name) with subtitle (date)
-\newcommand\maintitle[3]{\vbox to 0pt{\hfill\scriptsize\color{gray} #3}\vspace{-0.4em}\noindent{\LARGE \textbf{#1}}\ \ \ \emph{#2}}
+\newcommand\maintitle[3]{\vbox to 0pt{\hfill\scriptsize\color{gray} #3}\vspace{-0.3em}\noindent{\LARGE \textbf{#1}}\ \ \ \emph{#2}}
 
 % title for the root sections (experience, education, etc) of the resume
-\newcommand*\roottitle[1]{\subsection*{#1}\vspace{-0.3em}\nopagebreak[4]}
+\newcommand*\roottitle[1]{\subsection*{#1}\vspace{-0.2em}\nopagebreak[4]}
 
 % acr command, to quickly mark acronyms for special formatting
 \newcommand*\acr[1]{\textscale{.85}{#1}}
@@ -164,7 +163,7 @@
 \newcommand{\spacedhrule}[2]{\breakvspace{#1}\hrule\nobreakvspace{#2}}
 
 % \inlineheadsection command, used for a new employer
-\newcommand{\inlineheadsection}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]#2\end{basedescript}\vspace{-1.7em}}
+\newcommand{\inlineheadsection}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]#2\end{basedescript}\vspace{-1.5em}}
 
 % \inlineheadsection command, used for a one liner with data
 \newcommand{\inlineheadrightdate}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]\hfill\emph{#2}\end{basedescript}\vspace{-1.7em}}
