@@ -41,6 +41,55 @@
 \href{https://github.com/gabeochoa}{github.com/gabeochoa}\sbull
 \href{https://www.linkedin.com/in/gabemochoa}{linkedin.com/in/gabemochoa}
 
+\roottitle{Professional Experience}
+
+\spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
+
+\headedsection  % sets the header for the section and includes any subsections
+{\href{http://www.bloomberg.com/company}{Bloomberg L.P.}}
+{\textsc{New York, New York}}
+{
+    \headedsubsection
+    {Senior Software Engineer - Network Surveillance Automation}
+    {June 2016 - Present}
+    {
+        \begin{itemize}
+            \item Designed/Implemented systems to automate network management and monitoring
+            \item Worked alongside Network Design and Operation Engineers on the world's largest private network
+            \item\workexp{Factd}
+            { \begin{itemize}
+                \item Lead Engineer on a persistent timeseries key/value json store
+                \item Used to store over 1TB of configuration and state for 150,000 network devices
+                \item Integrated with Bloomberg SSO and Oauth2.0 Services
+                \item Consumed by other Infrastructure teams (~100k GETs / day)
+                \item Ingests data produced by other Network Automation teams (~60k POSTs / day)
+                \end{itemize} }
+            \item\workexp{Network State Collection and Healthchecks}
+            { \begin{itemize}
+                \item Designed a system for collecting current state of deployed devices
+                \item Clients define what metrics to collect and itents of the devices
+                \item States are monitored for any deviation or desync from intents
+                \end{itemize} }
+            \item Mentored four full-time employees and one intern
+            \item Assisted HR in interviewing for college and senior hire positions
+        \end{itemize}
+
+    }
+}
+\headedsection  % sets the header for the section and includes any subsections
+{}
+{}
+{
+    \headedsubsection
+    {Software Engineering Intern - \href{https://www.bloomberg.com/professional/product/vault/}{Vault}}
+    {Summer 2015}
+    {
+        \begin{itemize}
+            \item Designed, Tested and Implemented C++ and Java API for an Accumulo DataBase
+            \item Used during ingestion to process/query over a 1 billion cloud stored xml files
+        \end{itemize}
+    }
+}
 \roottitle{Education}
 
 \spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
@@ -51,94 +100,42 @@
     \inlineheadrightdate
     {B.S. Computer Science}
     {Sept 2012 - May 2016}
+    {}
+}
+
+\nobreakvspace{0.5em}  % add some page break averse vertical spacing
+
+\headedsection  % sets the header for the section and includes any subsections
+{}
+{}
+{
+    \headedsubsection
+    {Course Assistant CS140 - Programming with Objects}
+    {Fall 2013 \& Spr 2014}
+    {
+        \begin{itemize}
+            \item Assisted students with lab projects and assignments.
+            \item Skills - Java, Git, Eclipse
+        \end{itemize}
+    }
 }
 
 \roottitle{Skills \& Interests}
 
 \spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
 
-\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+\inlineskillsection  % special section that has an inline skiller with a 'hanging' paragraph
 {Programming languages:}
-{ C++, Java,  Python, C, C\#, Bash, Perl }
+{ Python, C++, Java, C, C\#, Bash, Perl }
 
-\inlineheadsection
-{Technical Knowledge:}
-{ Unity, OpenGL, Accumulo, MongoDB, GTest, LeapMotion, Git, \latex }
+\inlineskillsection
+{Technical Knowledge / Frameworks:}
+{ Django/Flask, MySQL/Postgres/SQLite, Git, SaltStack, Jenkins, Splunk, JIRA, Unity, OpenGL, \latex }
 
-\inlineheadsection
+\inlineskillsection
 {Human Languages:}
 {English (Native), Korean(Inter.), Spanish(Elem.), Mandarin Chinese (Beginner)}
 
-\roottitle{Professional Experience}
-
-\spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
-
-\headedsection  % sets the header for the section and includes any subsections
-{\href{http://www.bloomberg.com/}{Bloomberg LP}}
-{\textsc{New York, New York}}
-{
-    \headedsubsection
-    {Software Engineer - Network Services Automation}
-    {June 2016 - Present}
-    {
-        \begin{itemize}
-            \item Designed/Implemented systems to automate network management and provisioning
-            \item Worked alongside Network Design, Operations and Security Engineers
-            \item\workexp{EditNet - Subnet Provisioning Tool}
-            { \begin{itemize}
-                \item Lead Engineer on a CLI Tool and API to provision new subnets 
-                \item Network Design teams use this to allocate all new CIDR's within Bloomberg
-                \end{itemize} }
-            \item\workexp{Zero Touch Provisioning Tool}
-            {   \begin{itemize}
-                \item Automatically finds and configures newly DHCP'ed devices
-                \item Datacenter Infrastructure relies on ZTP to assist in deploying new racks
-                \end{itemize} }
-            \item\workexp{NetMon - Network Monitoring Data Pipeline}
-            { \begin{itemize}
-                \item Uses SNMP to poll all routers and switches in our network
-                \item Aggregates metrics and sends to splunk for use with grafana
-                \item Used for troubleshooting network issues by NetOps
-                \end{itemize} }
-            \item\workexp{Network State Collection and Healthchecks}
-            { \begin{itemize}
-                \item Designed a system for collecting current state of deployed devices
-                \item Clients define what metrics to collect and itents of the devices
-                \item States are monitored for any deviation or desync from intents
-                \end{itemize} }
-            \item Skills: Python, Flask/Django, Buildout, SaltStack, Jenkins, Git, Bash, Perl
-        \end{itemize}
-
-    }
-}
-\headedsection  % sets the header for the section and includes any subsections
-{}
-{} 
-{
-    \headedsubsection
-    {Software Engineering Intern - Bloomberg Vault}
-    {Summer 2015}
-    {
-        \begin{itemize}
-            \item Designed, Tested and Implemented API for an Accumulo DataBase
-            \item Used during ingestion to process/query over a billion cloud stored xml files
-            \item Skills: Accumulo, Hadoop, Java/C++/Python, GTest, Git
-        \end{itemize}
-    }
-}
-\headedsection
-{\href{}{Binghamton University}}
-{\textsc{Vestal, NY}} {
-    \headedsubsection
-    {Course Assistant CS140 - Programming with Objects}
-    {Fall 2013 \& Spr 2014}
-    {
-        \begin{itemize}
-            \item Assited students with lab projects and assignments.
-            \item Skills - Java, Git, Eclipse
-        \end{itemize}
-    }
-}
 
 \roottitle{Personal Projects {\footnotesize (ordered chronologically)}}
 
