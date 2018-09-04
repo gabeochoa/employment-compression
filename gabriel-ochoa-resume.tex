@@ -27,9 +27,10 @@
 \begin{document}  % begin the content of the document
 
 % title on top of the document
+\begin{center}
 \maintitle{Gabriel Ochoa}{}{}
-
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
+\end{center}
 
 % \noindent prevents paragraph's first lines from indenting
 % \mbox is used to obfuscate the email address
@@ -41,13 +42,14 @@
 \href{https://github.com/gabeochoa}{github.com/gabeochoa}\sbull
 \href{https://www.linkedin.com/in/gabemochoa}{linkedin.com/in/gabemochoa}
 
-\roottitle{Professional Experience}
+
+\roottitle{Experience}
 
 \spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
 
 \headedsection  % sets the header for the section and includes any subsections
 {\href{http://www.bloomberg.com/company}{Bloomberg L.P.}}
-{\textsc{New York, New York}}
+{New York, New York}
 {
     \headedsubsection
     {Senior Software Engineer - Network Surveillance Automation}
@@ -96,7 +98,7 @@
 
 \headedsection
 {\href{http://www.binghamton.edu/index.php}{Binghamton University, State University of New York}}
-{\textsc{Binghamton, New York}} {
+{Binghamton, New York} {
     \inlineheadrightdate
     {B.S. Computer Science}
     {Sept 2012 - May 2016}
@@ -105,22 +107,7 @@
 
 \nobreakvspace{0.5em}  % add some page break averse vertical spacing
 
-\headedsection  % sets the header for the section and includes any subsections
-{}
-{}
-{
-    \headedsubsection
-    {Course Assistant CS140 - Programming with Objects}
-    {Fall 2013 \& Spr 2014}
-    {
-        \begin{itemize}
-            \item Assisted students with lab projects and assignments.
-            \item Skills - Java, Git, Eclipse
-        \end{itemize}
-    }
-}
-
-\roottitle{Skills \& Interests}
+\roottitle{Skills}
 
 \spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
 
@@ -128,16 +115,22 @@
 {Programming languages:}
 { Python, C++, Java, C, C\#, Bash, Perl }
 
+\inlineskillsection  
+{Frameworks:}
+{ Django/Flask, Unity, OpenGL}
+
 \inlineskillsection
-{Technical Knowledge / Frameworks:}
-{ Django/Flask, MySQL/Postgres/SQLite, Git, SaltStack, Jenkins, Splunk, JIRA, Unity, OpenGL, \latex }
+{Technologies:}
+{ MySQL/Postgres/SQLite, Git, SaltStack, Jenkins, Splunk, JIRA, \latex }
 
 \inlineskillsection
 {Human Languages:}
 {English (Native), Korean(Inter.), Spanish(Elem.), Mandarin Chinese (Beginner)}
 
 
-\roottitle{Personal Projects {\footnotesize (ordered chronologically)}}
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+\roottitle{Personal Projects}
 
 \spacedhrule{0.1em}{0.5em}  % a horizontal line with some vertical spacing before and after
 
@@ -146,29 +139,26 @@
 {
     \begin{itemize}[label={}]
         \setlength\itemsep{.005ex}
-        \item{An electronic platform for trading fake commodities contracts}
-        \item{C++, POSIX Sockets, GTest, Travis CI, Markdown.}
+        \item{An electronic platform for trading fake commodities contracts. C++, Sockets, GTest.}
     \end{itemize}
 }
 
 \projects
-{{\href{https://github.com/gabeochoa/sokim}{Deceit}} - $\textbf{Best FOSS Hack}$}{BrickHack Spr16}
+{{\href{https://github.com/gabeochoa/sokim}{Deceit}} - $\textbf{Best FOSS Hack}$}{BrickHack Spring 2016}
 {
     \begin{itemize}[label={}]
         \setlength\itemsep{.005ex}
-        \item{Webapp Card Game based on Dixit (the board game)}
-        \item{Python, Flask, and Reddit API.}
+        \item{Webapp Card Game based on Dixit (the board game). Built with Python, Flask, and Reddit API.}
     \end{itemize}
 }
 
 \headedsubsection
 {{\href{https://github.com/alanplotko/RoadTrip}{FriendWagon}} - $\textbf{Best Use of AWS Winner}$ }
-{BrickHack Spr. 2015}
+{BrickHack Spring 2015}
 {
     \begin{itemize}[label={}]
     	\setlength\itemsep{.005ex}
-        \item{"Uber for Road Trips"}
-        \item{NodeJS, Spotify and Twilio API. Hosted on AWS.}
+        \item{"Uber for Road Trips". Using NodeJS, Spotify and Twilio API. Hosted on AWS.}
     \end{itemize}
 }
 
