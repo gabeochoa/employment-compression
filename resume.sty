@@ -113,7 +113,7 @@
 %%% CUSTOM COMMANDS
 
 % main title (name) with subtitle (date)
-\newcommand\maintitle[3]{\vbox to 0pt{\hfill\scriptsize\color{gray} #3}\vspace{-0.3em}\noindent{\LARGE \textbf{#1}}\ \ \ \emph{#2}}
+\newcommand\maintitle[3]{\vbox to 0pt{\hfill\scriptsize\color{gray} #3}\vspace{-0.3em}\noindent{\huge \textbf{#1}}\ \ \ \emph{#2}}
 
 % title for the root sections (experience, education, etc) of the resume
 \newcommand*\roottitle[1]{\subsection*{#1}\vspace{-0.2em}\nopagebreak[4]}
@@ -151,7 +151,7 @@
 % used for projects
 \newcommand{\projects}[3]{\nopagebreak[4]\begin{indentsection}\item[]\textbf{#1}\hfill\emph{#2}#3\end{indentsection}\nopagebreak[4]}
 
-\newcommand{\workexp}[2]{\nopagebreak[4]\textbf{#1}:#2\nopagebreak[4]}
+\newcommand{\workexp}[2]{\nopagebreak[4]#1:#2\nopagebreak[4]}
 
 
 % body text (indented)
@@ -160,6 +160,7 @@
 % \vspace variaties
 \newcommand{\breakvspace}[1]{\pagebreak[2]\vspace{#1}\pagebreak[2]}
 \newcommand{\nobreakvspace}[1]{\nopagebreak[4]\vspace{#1}\nopagebreak[4]}
+\newcommand{\nobreakhspace}[1]{\nobreak\hspace{#1}\nobreak}
 
 % \spacedhrule a horizontal line with some vertical space before and after it
 \newcommand{\spacedhrule}[2]{\breakvspace{#1}\hrule\nobreakvspace{#2}}
@@ -168,7 +169,7 @@
 \newcommand{\inlineheadsection}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]#2\end{basedescript}\vspace{-1.5em}}
 
 % \inlineheadsection command, used for a new employer
-\newcommand{\inlineskillsection}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]#2\end{basedescript}\vspace{-1.5em}}
+\newcommand{\inlineskillsection}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]#2\end{basedescript}\vspace{-1.75em}}
 
 % \inlineheadsection command, used for a one liner with data
 \newcommand{\inlineheadrightdate}[2]{\begin{basedescript}{\setlength{\leftmargin}{\doubleparindent}}\item[\hspace{\newparindent}\textbf{#1}]\hfill\emph{#2}\end{basedescript}\vspace{-1.7em}}
